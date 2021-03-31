@@ -1,21 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import style from '../style.jsx';
 
 const Input = styled.input`
-  border: 1px solid #424242;
-  font-family: "Gill Sans", sans-serif;
+  border: 1px solid ${style.primary};
+  background-color: ${style.light};
+  color: ${style.dark};
+  font-family: ${style.font};
   font-weight: 700;
   width: 60vw;
+  border-radius: 3vh;
   z-index: 0;
   position: relative;
   padding: 1.5vh 2vw;
   &:focus {
-    border: 1px solid #80CCC4;
+    border: 1px solid ${style.primary};
     outline: none;
-    box-shadow: 0 3px 6px #a0a0a0, 0 3px 6px #a0a0a0;
+    box-shadow: 0 3px 6px ${style.shadow}, 0 3px 6px ${style.shadow};
   };
   &:hover {
-    box-shadow: 0 3px 6px #a0a0a0, 0 3px 6px #a0a0a0;
+    border: 1px solid ${style.dark};
+    box-shadow: 0 3px 6px ${style.shadow}, 0 3px 6px ${style.shadow};
   }
 `;
 
@@ -34,7 +39,7 @@ class SearchBar extends React.Component {
 
   handleChange(e) {
     this.setState({ input: e.target.value }, () => {
-      if (this.state.input.length > 2) {
+      if (this.state.input.length > 1) {
         this.props.func(this.state.input);
       } else {
         this.props.reset();
@@ -45,7 +50,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Input value={this.state.input} onChange={this.handleChange} placeholder="BUILD YOUR SQUAD" type="text" />
+        <Input value={this.state.input} onChange={this.handleChange} placeholder="SEARCH UP YOUR SQUAD" type="text" />
       </Wrapper>
     );
   }

@@ -1,56 +1,36 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import SearchBar from './components/SearchBar.jsx';
 import SearchList from './components/SearchList.jsx';
-
-const Body = styled.div`
-  width: 65vw;
-  margin: 30vh auto;
-  margin-bottom: 5vh;
-`;
+import style from './style.jsx';
+import TeamList from './components/TeamList.jsx';
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
+width: 65vw;
+margin: 30vh auto;
+margin-bottom: 5vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;
 
-const Title = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0vh 0;
-  font-weight: 700;
-  font-size: 72px;
-  font-family: "Gill Sans", sans-serif;
-  color: #d0d0d0;
+
+const OPButton = styled.button`
 `;
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
       dd: [],
       teamList: [],
     };
-    //this.getAllPlayers = this.getAllPlayers.bind(this);
     this.search = this.search.bind(this);
     this.addPlayer = this.addPlayer.bind(this);
     this.reset = this.reset.bind(this);
   }
-
-  // componentDidMount() {
-  //   this.getAllPlayers();
-  // }
-
-  // getAllPlayers() {
-  //   axios.get('/init')
-  //     .then((data) => {
-  //       this.setState({ dd: data.data.rows });
-  //     });
-  // }
 
   search(string) {
     axios.get(`/search/${string}`)
@@ -65,19 +45,23 @@ class App extends React.Component {
     this.setState({ dd: [] });
   }
 
-  addPlayer() {
-
+  addPlayer(obj) {
+    this.state.teamList.push(obj);
+    this.setState((prevState) => ({
+      teamList: prevState.teamList,
+    }));
   }
 
   render() {
+    console.log(this.state.teamList);
     return (
-      <Body>
-        <Wrapper>
-          <Title>Hello</Title>
-          <SearchBar func={this.search} reset={this.reset} />
-          <SearchList results={this.state.dd} />
-        </Wrapper>
-      </Body>
+      <Wrapper>
+        {this.state.teamList.length > 2 ? <OPButton /> : null}
+        <SearchBar func={this.search} reset={this.reset} />
+        {this.state.dd.length === 0
+          ? null
+          : <SearchList results={this.state.dd} func={this.addPlayer} />}
+      </Wrapper>
     );
   }
 }
