@@ -15,7 +15,8 @@ const Help = styled.div`
 
 const Wrapper = styled.div`
   width: 75vw;
-  max-height: 65vh;
+  height: 30vh;
+  max-height: 25vh;
   overflow-y: scroll;
 `;
 

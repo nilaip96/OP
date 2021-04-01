@@ -60,6 +60,8 @@ app.post('/optimize', (req, res) => {
             gameCount += 1;
           }
         });
+        player.gameCount = gameCount;
+        player.score = 0;
         player.tp *= gameCount;
         player.trb *= gameCount;
         player.ast *= gameCount;
@@ -84,11 +86,27 @@ app.post('/optimize', (req, res) => {
       const Blocks = JSON.parse(JSON.stringify(req.body));
       Blocks.sort((a, b) => a.blk - b.blk);
       const TurnOvers = JSON.parse(JSON.stringify(req.body));
-      TurnOvers.sort((a, b) => a.tov - b.tov);
+      TurnOvers.sort((a, b) => b.tov - a.tov);
       const Points = JSON.parse(JSON.stringify(req.body));
       Points.sort((a, b) => a.pts - b.pts);
 
-      res.send(data.rows);
+      const opArray = [
+        FreeThrow, FeildGoal, ThreePoint, Rebounds, Assists, Steals, Blocks, TurnOvers, Points,
+      ];
+
+      req.body.forEach((player) => {
+        opArray.forEach((stat) => {
+          stat.forEach((subPlayer, index) => {
+            if (player.name === subPlayer.name) {
+              player.score += index;
+            }
+          });
+        });
+      });
+
+      req.body.sort((a, b) => b.score - a.score);
+
+      res.send(req.body);
     }
   });
 });
