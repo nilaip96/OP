@@ -46,10 +46,10 @@ const RnPWrap = styled.div`
 `;
 
 const TeamWrap = styled.div`
-  width: 25vw;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  width: 25vw;
+  justify-content: flex-start;
 `;
 
 const TeamDiv = styled.div`
@@ -72,19 +72,25 @@ const SearchList = (props) => (
           Name
         </div>
       </NameWrap>
-      <RnPWrap>
-        <div>
-          Rank
-        </div>
-        <div>
-          Position
-        </div>
-      </RnPWrap>
       <TeamWrap>
         <TeamDiv>
           Team
         </TeamDiv>
       </TeamWrap>
+      <RnPWrap>
+        <div>
+          Pos
+        </div>
+        <div>
+          PTS
+        </div>
+        <div>
+          REB
+        </div>
+        <div>
+          AST
+        </div>
+      </RnPWrap>
     </StatsWrap>
     <Wrapper>
       {props.results.map((item) => (

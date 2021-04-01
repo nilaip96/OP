@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SearchBar from './components/SearchBar.jsx';
 import SearchList from './components/SearchList.jsx';
 import style from './style.jsx';
-import TeamList from './components/TeamList.jsx';
+// import TeamList from './components/TeamList.jsx';
 
 const Wrapper = styled.div`
 width: 65vw;
@@ -16,8 +16,27 @@ align-items: center;
 justify-content: center;
 `;
 
-
 const OPButton = styled.button`
+  font-family: ${style.font};  
+  font-weight: 700;
+  background-color: ${style.light};
+  border: 1px solid ${style.dark};
+  border-radius: 3vh;
+  height: 3vh;
+  width: 30vw;
+  font-size: 15px;
+  color: ${style.dark};
+  &:hover {
+    cursor: pointer;
+    color: ${style.primary};
+    border: 1px solid ${style.primary};
+    box-shadow: 0 3px 6px ${style.shadow}, 0 3px 6px ${style.shadow};
+  };
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  };
+
 `;
 
 class App extends React.Component {
@@ -30,15 +49,13 @@ class App extends React.Component {
     this.search = this.search.bind(this);
     this.addPlayer = this.addPlayer.bind(this);
     this.reset = this.reset.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  search(string) {
-    axios.get(`/search/${string}`)
-      .then((data) => {
-        this.setState({
-          dd: data.data.rows,
-        });
-      });
+  handleClick() {
+    axios.post('/optimize', this.state.teamList).then((data) => {
+      console.log(data);
+    });
   }
 
   reset() {
@@ -52,11 +69,21 @@ class App extends React.Component {
     }));
   }
 
+  search(string) {
+    axios.get(`/search/${string}`)
+      .then((data) => {
+        this.setState({
+          dd: data.data.rows,
+        });
+      });
+  }
+
   render() {
     console.log(this.state.teamList);
     return (
       <Wrapper>
-        {this.state.teamList.length > 2 ? <OPButton /> : null}
+        {this.state.teamList.length > 2
+          ? <OPButton onClick={this.handleClick}>Get A Fire Line Up</OPButton> : null}
         <SearchBar func={this.search} reset={this.reset} />
         {this.state.dd.length === 0
           ? null

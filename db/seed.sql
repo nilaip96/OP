@@ -70,3 +70,5 @@ CREATE TABLE player (
 );
 
 CREATE INDEX player_player ON player (player);
+
+CREATE INDEX schedule_date ON schedule (date);

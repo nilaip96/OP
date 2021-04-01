@@ -10,6 +10,7 @@ const Logo = styled.img`
 `;
 
 const Wrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,7 +18,7 @@ const Wrapper = styled.div`
   color: ${style.light};
   font-family: ${style.font};
   font-size: 1.5vh;
-  padding: 1vh 1vh;
+  padding: 1vh 0 1vh 0;
 `;
 
 const NameWrap = styled.div`
@@ -49,7 +50,7 @@ const RnP = styled.div`
 const LogoWrap = styled.div`
   width: 25vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   // background-color: green;
 `;
 
@@ -88,17 +89,23 @@ class SearchItem extends React.Component {
           <Plus onClick={this.handleClick}>+</Plus>
           <div>{this.state.name}</div>
         </NameWrap>
-        <RnP>
-          <div>
-            {this.props.stats.rk}
-          </div>
-          <div>
-            {this.props.stats.pos}
-          </div>
-        </RnP>
         <LogoWrap>
           {this.state.img ? <Logo src={this.state.img} alt={this.state.team} /> : null}
         </LogoWrap>
+        <RnP>
+          <div>
+            {this.props.stats.pos}
+          </div>
+          <div>
+            {this.props.stats.pts}
+          </div>
+          <div>
+            {this.props.stats.trb}
+          </div>
+          <div>
+            {this.props.stats.ast}
+          </div>
+        </RnP>
       </Wrapper>
     );
   }
