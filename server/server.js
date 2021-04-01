@@ -27,8 +27,7 @@ app.get('/init', (req, res) => {
 
 app.get('/search/:p', (req, res) => {
   const search = req.params.p;
-  const variant = search[0].toUpperCase() + search.slice(1, search.length);
-  db.query(`SELECT * FROM player WHERE player LIKE '%${search}%' OR player LIKE '%${variant}%'`, (error, data) => {
+  db.query(`SELECT * FROM player WHERE LOWER(player) LIKE LOWER('%${search}%') `, (error, data) => {
     if (error) {
       console.log(error);
     } else {
@@ -62,6 +61,7 @@ app.post('/optimize', (req, res) => {
         });
         player.gameCount = gameCount;
         player.score = 0;
+        player.best = [];
         player.tp *= gameCount;
         player.trb *= gameCount;
         player.ast *= gameCount;
@@ -93,12 +93,18 @@ app.post('/optimize', (req, res) => {
       const opArray = [
         FreeThrow, FeildGoal, ThreePoint, Rebounds, Assists, Steals, Blocks, TurnOvers, Points,
       ];
+      const stringArray = [
+        'Free Throw Percentage', 'Feild Goal Percentage', 'Three Points', 'Rebounds', 'Assists', 'Steals', 'Blocks', 'Turn Overs', 'Points',
+      ];
 
       req.body.forEach((player) => {
-        opArray.forEach((stat) => {
+        opArray.forEach((stat, position) => {
           stat.forEach((subPlayer, index) => {
             if (player.name === subPlayer.name) {
               player.score += index;
+            }
+            if ((player.name === subPlayer.name) && (index === stat.length - 1)) {
+              player.best.push(stringArray[position]);
             }
           });
         });
