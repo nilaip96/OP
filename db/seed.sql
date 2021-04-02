@@ -72,3 +72,15 @@ CREATE TABLE player (
 CREATE INDEX player_player ON player (player);
 
 CREATE INDEX schedule_date ON schedule (date);
+
+COPY player
+FROM '/home/ubuntu/OP/db/ReducedCurrentNBAStats.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY schedule
+FROM '/home/ubuntu/OP/db/CurrentNBASchedule.csv'
+DELIMITER ','
+CSV HEADER;
+
+ GRANT ALL PRIVILEGES ON TABLE TABLE_NAME TO nilai;
