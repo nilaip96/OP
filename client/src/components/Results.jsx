@@ -108,7 +108,7 @@ class Results extends React.Component {
               <div>
                 <Player>{`PG : ${this.state.PG.name}`}</Player>
                 <BestWrapper>
-                  {this.state.PG.best ? <div>Best in:</div> : null}
+                  {this.state.PG.best.length !== 0 ? <div>Best in:</div> : null}
                   {this.state.PG.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
                 </BestWrapper>
               </div>
@@ -118,7 +118,7 @@ class Results extends React.Component {
               <div>
                 <Player>{`SG : ${this.state.SG.name}`}</Player>
                 <BestWrapper>
-                  {this.state.SG.best ? <div>Best in:</div> : null}
+                  {this.state.SG.best.length !== 0 ? <div>Best in:</div> : null}
                   {this.state.SG.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
                 </BestWrapper>
               </div>
@@ -128,7 +128,7 @@ class Results extends React.Component {
               <div>
                 <Player>{`PF : ${this.state.PF.name}`}</Player>
                 <BestWrapper>
-                  {this.state.PF.best ? <div>Best in:</div> : null}
+                  {this.state.PF.best.length !== 0 ? <div>Best in:</div> : null}
                   {this.state.PF.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
                 </BestWrapper>
               </div>
@@ -138,7 +138,7 @@ class Results extends React.Component {
               <div>
                 <Player>{`SF : ${this.state.SF.name}`}</Player>
                 <BestWrapper>
-                  {this.state.SF.best ? <div>Best in:</div> : null}
+                  {this.state.SF.best.length !== 0 ? <div>Best in:</div> : null}
                   {this.state.SF.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
                 </BestWrapper>
               </div>
@@ -148,7 +148,7 @@ class Results extends React.Component {
               <div>
                 <Player>{`C : ${this.state.C.name}`}</Player>
                 <BestWrapper>
-                  {this.state.C.best ? <div>Best in:</div> : null}
+                  {this.state.C.best.length !== 0 ? <div>Best in:</div> : null}
                   {this.state.C.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
                 </BestWrapper>
               </div>
@@ -157,7 +157,7 @@ class Results extends React.Component {
             <div key={`${player.name}div`}>
               <Player key={`${player.name}Player`}>{`ULT : ${player.name}`}</Player>
               <BestWrapper key={`${player.name}Best`}>
-                {player.best ? <div>Best in:</div> : null}
+                {player.best.length !== 0 ? <div>Best in:</div> : null}
                 {player.best.map((stat) => (<BestStat key={stat}>{stat}</BestStat>))}
               </BestWrapper>
             </div>
