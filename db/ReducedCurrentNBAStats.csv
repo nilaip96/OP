@@ -3,10 +3,10 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 2,Joel Embiid\embiijo01,C,PHI,.525,1.2,.859,11.5,3.3,1.2,1.4,3.2,29.9
 3,Damian Lillard\lillada01,PG,POR,.446,4.2,.944,4.3,7.8,0.9,0.3,3.2,29.8
 4,Stephen Curry\curryst01,PG,GSW,.475,4.7,.927,5.3,6.2,1.4,0.1,3.0,29.1
-5,Kevin Durant\duranke01,PF,BRK,.524,2.6,.869,7.3,5.3,0.7,1.4,3.5,29.0
+5,Kevin Durant\duranke01,PF,BKN,.524,2.6,.869,7.3,5.3,0.7,1.4,3.5,29.0
 6,Luka Dončić\doncilu01,PG,DAL,.483,3.0,.748,8.1,9.0,1.0,0.6,4.2,28.5
 7,Giannis Antetokounmpo\antetgi01,PF,MIL,.556,1.2,.679,11.4,6.3,1.2,1.3,3.6,28.4
-8,Kyrie Irving\irvinky01,PG,BRK,.520,2.8,.893,4.9,5.6,1.3,0.6,2.3,28.1
+8,Kyrie Irving\irvinky01,PG,BKN,.520,2.8,.893,4.9,5.6,1.3,0.6,2.3,28.1
 9,Zach LaVine\lavinza01,SG,CHI,.513,3.4,.866,5.0,4.8,0.9,0.4,3.8,27.5
 10,Nikola Jokić\jokicni01,C,DEN,.571,1.5,.868,11.1,8.5,1.6,0.7,3.0,26.9
 11,Zion Williamson\willizi01,PF,NOP,.624,0.2,.708,7.1,3.5,0.9,0.7,2.6,26.4
@@ -26,7 +26,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 25,Brandon Ingram\ingrabr01,SF,NOP,.475,2.4,.876,4.9,4.7,0.6,0.7,2.4,23.8
 26,Shai Gilgeous-Alexander\gilgesh01,SG,OKC,.508,2.0,.808,4.7,5.9,0.8,0.7,3.0,23.7
 27,Julius Randle\randlju01,PF,NYK,.468,2.0,.787,10.8,5.8,0.9,0.2,3.3,23.0
-28,Alize Johnson\johnsal02,F,BRK,.733,0.0,1.000,15.0,3.0,2.0,0.0,1.0,23.0
+28,Alize Johnson\johnsal02,F,BKN,.733,0.0,1.000,15.0,3.0,2.0,0.0,1.0,23.0
 29,Jerami Grant\grantje01,SF,DET,.424,2.3,.868,4.9,2.8,0.7,1.1,2.0,22.6
 30,Paul George\georgpa01,SF,LAC,.473,3.2,.882,6.3,5.5,1.1,0.5,3.2,22.5
 31,Anthony Davis\davisan02,PF,LAL,.533,0.7,.715,8.4,3.0,1.3,1.8,2.0,22.5
@@ -96,7 +96,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 95,Thomas Bryant\bryanth01,C,WAS,.648,0.9,.667,6.1,1.5,0.4,0.8,1.1,14.3
 96,Lonzo Ball\balllo01,PG,NOP,.425,3.0,.767,4.2,5.6,1.3,0.6,2.0,14.2
 97,Al Horford\horfoal01,C,OKC,.450,2.0,.818,6.7,3.4,0.9,0.9,1.0,14.2
-98,Joe Harris\harrijo01,SF,BRK,.510,3.2,.721,3.4,1.7,0.6,0.2,0.8,14.1
+98,Joe Harris\harrijo01,SF,BKN,.510,3.2,.721,3.4,1.7,0.6,0.2,0.8,14.1
 99,Carmelo Anthony\anthoca01,PF,POR,.417,1.8,.863,3.3,1.7,0.8,0.7,1.0,13.9
 100,Marvin Bagley III\baglema01,PF,SAC,.502,0.9,.560,7.4,0.9,0.5,0.5,1.3,13.9
 101,Devonte' Graham\grahade01,PG,CHA,.376,3.1,.811,2.6,5.1,0.9,0.1,1.5,13.9
@@ -186,7 +186,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 185,Gary Harris\harriga01,SG,DEN,.442,1.3,.733,2.5,1.7,0.9,0.2,0.7,9.7
 186,Jusuf Nurkić\nurkiju01,C,POR,.491,0.4,.515,7.4,2.6,0.9,0.9,1.9,9.7
 187,Otto Porter\porteot01,SF,ORL,.435,1.5,.838,5.5,2.0,0.5,0.2,1.0,9.7
-188,Jeff Green\greenje02,C,BRK,.495,1.3,.759,3.8,1.4,0.6,0.3,0.8,9.6
+188,Jeff Green\greenje02,C,BKN,.495,1.3,.759,3.8,1.4,0.6,0.3,0.8,9.6
 189,DeMarcus Cousins\couside01,C,HOU,.376,1.6,.746,7.6,2.4,0.8,0.7,1.6,9.6
 190,Desmond Bane\banede01,SG,MEM,.486,1.8,.833,2.9,1.3,0.7,0.2,1.0,9.5
 191,Eric Paschall\pascher01,PF,GSW,.496,0.4,.713,3.1,1.3,0.3,0.2,1.0,9.5
@@ -208,10 +208,10 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 207,Cody Zeller\zelleco01,C,CHA,.508,0.1,.690,6.9,2.1,0.7,0.4,0.9,8.7
 208,Nicolas Batum\batumni01,SF,LAC,.465,1.8,.848,4.8,2.3,1.1,0.4,0.8,8.6
 209,Ivica Zubac\zubaciv01,C,LAC,.637,0.0,.826,7.2,1.1,0.4,0.9,1.1,8.6
-210,Nicolas Claxton\claxtni01,C,BRK,.593,0.1,.545,4.5,0.8,0.7,1.5,0.5,8.5
+210,Nicolas Claxton\claxtni01,C,BKN,.593,0.1,.545,4.5,0.8,0.7,1.5,0.5,8.5
 211,Kentavious Caldwell-Pope\caldwke01,SG,LAL,.421,1.5,.859,2.4,1.5,0.8,0.3,1.0,8.4
 212,Dorian Finney-Smith\finnedo01,PF,DAL,.438,1.6,.840,5.1,1.6,0.9,0.4,0.6,8.4
-213,Bruce Brown\brownbr01,PG,BRK,.546,0.2,.736,4.5,1.5,0.7,0.3,0.8,8.3
+213,Bruce Brown\brownbr01,PG,BKN,.546,0.2,.736,4.5,1.5,0.7,0.3,0.8,8.3
 214,Ricky Rubio\rubiori01,PG,MIN,.387,0.8,.845,3.2,6.9,1.4,0.0,1.9,8.3
 215,Patrick Beverley\beverpa01,PG,LAC,.442,1.7,.795,3.7,2.1,0.9,0.8,0.9,8.3
 216,Mitchell Robinson\robinmi01,C,NYK,.653,0.0,.491,8.1,0.5,1.1,1.5,0.8,8.3
@@ -234,11 +234,11 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 233,Sterling Brown\brownst02,SG,HOU,.432,1.7,.917,4.7,1.5,0.8,0.3,0.8,7.8
 234,Maxi Kleber\klebima01,PF,DAL,.441,1.9,.935,5.5,1.3,0.5,0.8,0.5,7.8
 235,Isaac Okoro\okorois01,SG,CLE,.405,0.8,.694,2.7,1.8,1.0,0.5,1.5,7.8
-236,Landry Shamet\shamela01,SG,BRK,.391,1.8,.837,1.8,1.1,0.5,0.1,0.7,7.8
+236,Landry Shamet\shamela01,SG,BKN,.391,1.8,.837,1.8,1.1,0.5,0.1,0.7,7.8
 237,James Ennis\ennisja01,SF,ORL,.487,1.1,.792,4.0,1.4,0.8,0.2,0.9,7.8
 238,Jakob Poeltl\poeltja01,C,SAS,.628,0.0,.384,7.8,1.8,0.5,1.7,1.3,7.7
 239,Robert Williams\williro04,C,BOS,.714,0.0,.644,6.7,1.6,0.9,1.9,1.0,7.7
-240,DeAndre Jordan\jordade01,C,BRK,.767,0.0,.492,7.3,1.7,0.3,1.2,1.5,7.6
+240,DeAndre Jordan\jordade01,C,BKN,.767,0.0,.492,7.3,1.7,0.3,1.2,1.5,7.6
 241,Henry Ellenson\ellenhe01,PF,TOR,.357,1.0,.750,6.0,2.5,0.0,0.0,0.0,7.5
 242,Ben McLemore\mclembe01,SG,HOU,.355,1.7,.719,2.1,0.9,0.6,0.1,0.9,7.5
 243,Tyrese Maxey\maxeyty01,SG,PHI,.459,0.5,.828,1.7,1.6,0.4,0.2,0.6,7.3
@@ -258,7 +258,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 257,Trey Burke\burketr01,PG,DAL,.450,1.0,.868,1.0,1.4,0.6,0.1,0.5,6.9
 258,Pat Connaughton\connapa01,SG,MIL,.455,1.5,.769,4.7,1.4,0.7,0.4,0.5,6.9
 259,Cory Joseph\josepco01,PG,DET,.445,0.7,.800,2.4,2.5,0.9,0.2,1.1,6.9
-260,Timothé Luwawu-Cabarrot\luwawti01,SF,BRK,.376,1.5,.781,2.5,1.3,0.7,0.1,0.8,6.9
+260,Timothé Luwawu-Cabarrot\luwawti01,SF,BKN,.376,1.5,.781,2.5,1.3,0.7,0.1,0.8,6.9
 261,Jeff Teague\teaguje01,PG,BOS,.415,0.8,.836,1.7,2.1,0.8,0.2,1.1,6.9
 262,Nemanja Bjelica\bjeline01,PF,MIA,.460,0.6,.762,3.7,1.8,0.3,0.1,1.1,6.9
 263,Kenyon Martin Jr.\martike04,SF,HOU,.510,0.4,.759,4.6,0.7,0.6,0.9,1.0,6.9
@@ -268,7 +268,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 267,D.J. Augustin\augusdj01,PG,HOU,.390,1.3,.923,1.5,3.2,0.6,0.0,1.0,6.7
 268,Aaron Holiday\holidaa01,PG,IND,.373,0.9,.756,1.2,1.7,0.6,0.1,0.7,6.7
 269,Dwight Howard\howardw01,C,PHI,.570,0.1,.548,8.1,0.7,0.4,0.9,1.8,6.7
-270,Spencer Dinwiddie\dinwisp01,SG,BRK,.375,0.7,1.000,4.3,3.0,0.7,0.3,1.7,6.7
+270,Spencer Dinwiddie\dinwisp01,SG,BKN,.375,0.7,1.000,4.3,3.0,0.7,0.3,1.7,6.7
 271,Abdel Nader\naderab01,SF,PHO,.491,0.8,.757,2.6,0.8,0.4,0.4,0.8,6.7
 272,Max Strus\strusma01,SF,MIA,.467,1.5,.688,1.0,0.5,0.2,0.0,0.2,6.7
 273,Frank Kaminsky\kaminfr01,C,PHO,.471,0.8,.606,3.7,1.6,0.3,0.4,0.5,6.6
@@ -319,7 +319,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 318,Semi Ojeleye\ojelese01,PF,BOS,.408,1.2,.733,2.9,0.8,0.3,0.0,0.4,5.3
 319,Devin Vassell\vassede01,SF,SAS,.412,0.9,.867,3.1,1.0,0.9,0.3,0.4,5.3
 320,Al-Farouq Aminu\aminual01,PF,CHI,.400,0.4,.842,5.3,1.6,0.9,0.5,1.5,5.3
-321,Tyler Johnson\johnsty01,SG,BRK,.391,1.2,.842,1.9,1.0,0.4,0.0,0.3,5.3
+321,Tyler Johnson\johnsty01,SG,BKN,.391,1.2,.842,1.9,1.0,0.4,0.0,0.3,5.3
 322,Nico Mannion\mannini01,PG,GSW,.341,1.1,.800,1.8,2.8,0.7,0.0,1.1,5.3
 323,Glenn Robinson III\robingl02,SF,SAC,.424,0.7,.913,2.0,0.9,0.2,0.1,0.5,5.3
 324,Daniel Gafford\gaffoda01,PF,WAS,.700,0.0,.674,3.5,0.5,0.4,1.2,0.8,5.2
@@ -366,7 +366,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 365,P.J. Tucker\tuckepj01,PF,MIL,.363,0.8,.783,4.4,1.3,0.8,0.6,0.9,4.1
 366,Chimezie Metu\metuch01,C,SAC,.565,0.2,.700,2.3,0.5,0.2,0.6,0.6,4.1
 367,Frank Ntilikina\ntilila01,PG,NYK,.359,1.0,.500,1.4,0.8,0.8,0.1,0.6,4.1
-368,Reggie Perry\perryre01,PF,BRK,.417,0.3,.727,3.9,0.9,0.3,0.3,0.8,4.1
+368,Reggie Perry\perryre01,PF,BKN,.417,0.3,.727,3.9,0.9,0.3,0.3,0.8,4.1
 369,Cody Martin\martico01,SF,CHA,.491,0.3,.667,2.6,1.4,0.5,0.2,0.6,4.0
 370,Jordan Bone\bonejo01,PG,ORL,.426,0.7,,1.7,1.3,0.1,0.0,0.2,4.0
 371,Javonte Green\greenja02,SG,CHI,.526,0.3,.667,2.1,0.4,0.7,0.1,0.6,4.0
@@ -374,7 +374,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 373,John Konchar\konchjo01,SG,MEM,.437,0.4,.850,3.3,1.1,0.9,0.2,0.4,4.0
 374,Brodric Thomas\thomabr01,SG,CLE,.302,0.4,.810,1.3,1.0,0.6,0.4,0.6,4.0
 375,Kevon Looney\looneke01,C,GSW,.592,0.1,.741,4.1,1.8,0.4,0.4,0.6,3.9
-376,Chris Chiozza\chiozch01,PG,BRK,.333,0.7,.769,1.0,2.9,0.4,0.3,0.7,3.9
+376,Chris Chiozza\chiozch01,PG,BKN,.333,0.7,.769,1.0,2.9,0.4,0.3,0.7,3.9
 377,Brandon Goodwin\goodwbr01,PG,ATL,.345,0.6,.708,1.0,1.5,0.4,0.0,0.6,3.9
 378,Chandler Hutchison\hutchch01,SF,WAS,.448,0.4,1.000,3.1,0.5,0.1,0.0,1.0,3.9
 379,Nathan Knight\knighna01,PF,ATL,.435,0.3,.893,2.0,0.2,0.2,0.3,0.6,3.9
@@ -465,7 +465,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 464,Marques Bolden\boldema01,C,CLE,.333,0.0,.625,1.0,0.0,0.3,0.3,0.3,1.2
 465,Mfiondu Kabengele\kabenmf01,PF,LAC,.281,0.2,.833,0.6,0.2,0.1,0.1,0.3,1.2
 466,Nick Richards\richani01,PF,CHA,.500,0.0,.636,0.7,0.0,0.0,0.0,0.1,1.2
-467,Andre Roberson\roberan03,SG,BRK,.143,0.2,.500,3.0,0.8,0.6,0.2,0.4,1.2
+467,Andre Roberson\roberan03,SG,BKN,.143,0.2,.500,3.0,0.8,0.6,0.2,0.4,1.2
 468,Sindarius Thornwell\thornsi01,SG,NOP,.333,0.2,.000,0.4,0.3,0.4,0.1,0.3,1.2
 469,Markus Howard\howarma02,SG,DEN,.220,0.2,.500,0.3,0.4,0.1,0.0,0.3,1.1
 470,Cassius Stanley\stanlca01,SG,IND,.267,0.1,.800,0.7,0.0,0.0,0.2,0.1,1.1
@@ -477,7 +477,7 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 476,Karim Mané\maneka01,PG,ORL,.167,0.1,1.000,1.6,0.4,0.0,0.2,0.3,1.0
 477,Patrick McCaw\mccawpa01,SF,TOR,1.000,0.0,1.000,0.6,0.8,0.4,0.0,0.0,1.0
 478,Cameron Reynolds\reynoca01,G,SAS,1.000,0.0,,0.0,0.0,0.0,0.0,0.0,1.0
-479,Iman Shumpert\shumpim01,SG,BRK,.250,0.0,,0.5,0.0,0.5,0.0,0.5,1.0
+479,Iman Shumpert\shumpim01,SG,BKN,.250,0.0,,0.5,0.0,0.5,0.0,0.5,1.0
 480,Tyrell Terry\terryty01,PG,DAL,.313,0.0,.333,0.5,0.5,0.5,0.0,0.2,1.0
 481,Axel Toupane\toupaax01,G-F,MIL,.286,0.0,,1.0,0.5,0.0,0.8,0.0,1.0
 482,Tyler Bey\beyty01,SF,DAL,.273,0.0,.500,1.3,0.1,0.0,0.1,0.0,0.9
@@ -503,5 +503,5 @@ Rk,Player,Pos,Tm,FG%,3P,FT%,TRB,AST,STL,BLK,TOV,PTS
 502,Ashton Hagans\haganas01,PG,MIN,,0.0,,0.0,0.0,0.0,0.0,0.5,0.0
 503,Will Magnay\magnawi01,C,NOP,.000,0.0,,0.0,0.0,0.0,0.0,1.0,0.0
 504,Anžejs Pasečņiks\pasecan01,C,WAS,.000,0.0,,1.0,1.0,0.0,0.0,5.0,0.0
-505,Noah Vonleh\vonleno01,PF,BRK,.000,0.0,,0.3,0.3,0.0,0.0,0.5,0.0
+505,Noah Vonleh\vonleno01,PF,BKN,.000,0.0,,0.3,0.3,0.0,0.0,0.5,0.0
 506,Greg Whittington\whittgr01,PF,DEN,.000,0.0,,0.0,0.0,0.0,0.0,0.0,0.0

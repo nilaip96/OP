@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import style from '../style.jsx';
 
 const Input = styled.input`
+  margin: 10vh auto 1vh auto;
   border: 1px solid ${style.primary};
   background-color: ${style.light};
   color: ${style.dark};

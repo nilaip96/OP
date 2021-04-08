@@ -1,5 +1,5 @@
 const style = {
-  primary: '#FFD700',
+  primary: '#ff7f50',
   font: '"Roboto", sans-serif',
   dark: '#FF00FF',
   light: '#F0FFFF',

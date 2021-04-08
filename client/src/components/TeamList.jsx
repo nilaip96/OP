@@ -67,7 +67,7 @@ const TeamList = (props) => (
     <StatsWrap>
       <NameWrap>
         <Add>
-          Add
+          Remove
         </Add>
         <div>
           Name

@@ -7,10 +7,17 @@ import style from './style.jsx';
 import TeamList from './components/TeamList.jsx';
 import Modal from './components/Modal.jsx';
 import Results from './components/Results.jsx';
+import LandingPage from './components/LandingPage.jsx';
+
+const AppWrapper = styled.div`
+height: 100vh;
+width: 100vw;
+background: linear-gradient(90deg, #FF00FF 0%, #ff7f50 64%, #FFD700 100%);
+`;
 
 const Wrapper = styled.div`
 width: 65vw;
-margin: 10vh auto;
+margin: 0 auto;
 margin-bottom: 5vh;
 display: flex;
 flex-direction: column;
@@ -104,31 +111,37 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state.dd)
     return (
-      <Wrapper>
-        <SearchBar func={this.search} reset={this.reset} />
-        {this.state.dd.length === 0
-          ? null
-          : <SearchList results={this.state.dd} func={this.addPlayer} />}
-        {this.state.teamList.length === 0
-          ? null
-          : <TeamList list={this.state.teamList} func={this.removePlayer} />}
-        <ButtonWrap>
-          {this.state.teamList.length > 2
-            ? <OPButton onClick={this.handleClick}>Get A Fire Line Up</OPButton> : null}
-        </ButtonWrap>
-        {this.state.modal
-          ? (
-            <Modal content={(
-              <Results
-                data={this.state.optimized}
-                func={this.exitModal}
-              />
+      <div>
+        <LandingPage />
+        <AppWrapper>
+          <Wrapper>
+            <SearchBar func={this.search} reset={this.reset} />
+            {this.state.dd.length === 0
+              ? null
+              : <SearchList results={this.state.dd} func={this.addPlayer} />}
+            {this.state.teamList.length === 0
+              ? null
+              : <TeamList list={this.state.teamList} func={this.removePlayer} />}
+            <ButtonWrap>
+              {this.state.teamList.length > 2
+                ? <OPButton onClick={this.handleClick}>Get A Fire Line Up</OPButton> : null}
+            </ButtonWrap>
+            {this.state.modal
+              ? (
+                <Modal content={(
+                  <Results
+                    data={this.state.optimized}
+                    func={this.exitModal}
+                  />
               )}
-            />
-          )
-          : null}
-      </Wrapper>
+                />
+              )
+              : null}
+          </Wrapper>
+        </AppWrapper>
+      </div>
     );
   }
 }
