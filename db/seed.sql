@@ -66,7 +66,7 @@ CREATE TABLE player (
   BLK REAL NULL DEFAULT NULL,
   TOV REAL NULL DEFAULT NULL,
   PTS REAL NULL DEFAULT NULL,
-  PRIMARY KEY (rk)
+   
 );
 
 CREATE INDEX player_player ON player (player);
