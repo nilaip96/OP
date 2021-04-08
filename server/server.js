@@ -101,7 +101,7 @@ app.post('/optimize', (req, res) => {
         opArray.forEach((stat, position) => {
           stat.forEach((subPlayer, index) => {
             if (player.name === subPlayer.name) {
-              player.score += index;
+              player.score += index * 1.3;
             }
             if ((player.name === subPlayer.name) && (index === stat.length - 1)) {
               player.best.push(stringArray[position]);
