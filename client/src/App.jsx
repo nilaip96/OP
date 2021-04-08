@@ -9,10 +9,19 @@ import Modal from './components/Modal.jsx';
 import Results from './components/Results.jsx';
 import LandingPage from './components/LandingPage.jsx';
 
+const Entire = styled.div`
+max-height: 100vh;
+overflow-y: scroll;
+scroll-snap-type: mandatory;
+scroll-snap-points-y: repeat(3rem);
+scroll-snap-type: y mandatory;
+`;
+
 const AppWrapper = styled.div`
 height: 100vh;
 width: 100vw;
 background: linear-gradient(90deg, #FF00FF 0%, #ff7f50 64%, #FFD700 100%);
+scroll-snap-align: start;
 `;
 
 const Wrapper = styled.div`
@@ -113,7 +122,7 @@ class App extends React.Component {
   render() {
     console.log(this.state.dd)
     return (
-      <div>
+      <Entire>
         <LandingPage />
         <AppWrapper>
           <Wrapper>
@@ -141,7 +150,7 @@ class App extends React.Component {
               : null}
           </Wrapper>
         </AppWrapper>
-      </div>
+      </Entire>
     );
   }
 }
