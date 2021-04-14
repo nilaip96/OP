@@ -4,6 +4,7 @@
 [Nilai Patel](https://github.com/nilaip96/PPFEC)
 
 ---
+![alt text](https://github.com/nilaip96/OP/blob/main/Screen%20Shot%202021-04-13%20at%205.32.41%20PM.png)
 
 ## Technologies Used
 1. React.js
@@ -33,6 +34,12 @@ For my MVP project at Hack Reactor, deploy a working and stylish app for your fa
 6. Click the bottom button to get the best lineup for the week.
 7. View the optimized line-up
 8. Exit modal to make any cahnges to your roster.
+
+<br>
+
+**Preview**
+![alt text](https://github.com/nilaip96/OP/blob/main/Screen%20Shot%202021-04-13%20at%205.33.01%20PM.png)
+
 
 
 <b id="f1">1</b> Nils Made It. [↩](#a1)
