@@ -1,7 +1,6 @@
 # OPtoBOT <sup id="a1">[1](#f1)</sup>
 ## A project
 *by*
-[Nilai Patel](https://github.com/nilaip96/PPFEC)
 
 ---
 ![alt text](https://github.com/nilaip96/OP/blob/main/Screen%20Shot%202021-04-13%20at%205.32.41%20PM.png)
