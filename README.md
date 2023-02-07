@@ -1,5 +1,5 @@
 # OPtoBOT <sup id="a1">[1](#f1)</sup>
-## A project for optimizing your weekly fantasy basketball lineup
+## A project
 *by*
 [Nilai Patel](https://github.com/nilaip96/PPFEC)
 
